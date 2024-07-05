@@ -127,7 +127,7 @@ class Solution {
         }
         prev = root;
         
-        fixed(root->right,prev,first,second);
+        inorder(root->right,prev,first,second);
     }
     void correctBST( struct Node* root )
     {
@@ -136,7 +136,7 @@ class Solution {
         Node* second = NULL;
         
         inorder(root,prev,first,second);
-        swap(first->data, second->data;)
+        swap(first->data, second->data);
     }
 };
 
